@@ -28,6 +28,7 @@ function setup() {
 function draw() {
   background(bg);
 
+  if(height!==undefined){
   if(keyDown(LEFT_ARROW)){
     updateHeight(-10,0);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
@@ -52,7 +53,8 @@ function draw() {
   stroke("white");
   textSize(25);
   text("**Use arrow keys to move Hot Air Balloon!",40,40);
-}
+ }
+}   
 
 
 function updateHeight(x,y){
